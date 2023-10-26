@@ -187,8 +187,8 @@
         startTime=new Date();
         $("#time").html("経過時間：0");
         $("#remain").html("残り時間："+period);
-        $("#btnB").css("font-size","20px");
-        $("#btnB").css("font-family","Time");
+        
+      
         
           
 
@@ -209,6 +209,10 @@
         alarm();
         active=false;
         period=60*parseInt($("#minute").val())+parseInt($("#second").val());
+         $("#btnB").css("font-size","20px");
+        $("#btnB").css("font-family","Time");
+        $('#btnB').css("background-color","white");
+
        
         
         
