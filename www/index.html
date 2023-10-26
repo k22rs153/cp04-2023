@@ -236,14 +236,18 @@
 
         if(rest<=30&&rest>=20){
             $('#btnB').css("background-color","skyblue");
-        
+            $("#remain").html("残り時間  "+rest+": 時間に余裕あり");
          }else if(rest<20&&rest>=10){
             $('#btnB').css("background-color","yellow");
-           
-             } else{
+                 $("#remain").html("残り時間  "+rest+": 少し急いで");
+        } else{
                     $('#btnB').css("background-color","red");
                     $("#btnB").css("font-size","x-large");
                     $("#btnB").css("font-family","fantasy");
+                    $("#remain").html("残り時間  "+rest+": 急いで!!");
+                    
+
+
                    
                        }
         }
